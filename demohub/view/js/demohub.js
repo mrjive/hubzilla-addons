@@ -5,14 +5,14 @@ $(document).ready(function(){
 		}
 	}
 	
-	$('<li class="">\n\
-		<a class="demohub-help-btn nav-item" target="demohubHelpModal" href=#demohubHelpModal" title="Demo help" \n\
+	$('<li class="nav-item">\n\
+		<a class="demohub-help-btn nav-link" target="demohubHelpModal" href=#demohubHelpModal" title="Demo help" \n\
 		onclick="$(\'#demohubHelpModal\').modal(); return false;"><i class="fa fa-info" style="color: white; background-color:#3A87AD;"></i></a>\n\
-		</li>').appendTo('#navbar-collapse-1 .nav-right');
+		</li>').prependTo('#nav-right');
 	
-	$('<button class="navbar-toggle border-0 demohub-help-btn" type="button" onclick="$(\'#demohubHelpModal\').modal(); return false;">\n\
+	$('<button class="navbar-toggler border-0 demohub-help-btn" type="button" onclick="$(\'#demohubHelpModal\').modal(); return false;">\n\
 			<i class="fa fa-info" style="color: white; background-color:#3A87AD;"></i>\n\
-		</button>').appendTo('nav .navbar .navbar-toggler-right');
+		</button>').prependTo('nav.navbar > .navbar-toggler-right');
 	
 	$('.demohub-help-btn').css('background-color', '#3A87AD');
 	// Save data to sessionStorage
